@@ -1,0 +1,113 @@
+:root {
+  box-sizing: border-box;
+  --LinearGradient-active_input_border: hsl(249, 99%, 64%) to hsl(278, 94%, 30%)
+  --Red_input_errors: hsl(0, 100%, 66%);
+
+
+  --White: hsl(0, 0%, 100%);
+  --LightGrayishViolet: hsl(270, 3%, 87%);
+  --DarkGrayishViolet: hsl(279, 6%, 55%);
+  --VeryDarkViolet: hsl(278, 68%, 11%);
+
+  --fs: 18px;
+  --fw: 500;
+  /* - Family: [Space Grotesk](https://fonts.google.com/specimen/Space+Grotesk) */
+
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+#app {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+.cards {
+  grid-column: 1/-1;
+  grid-row: 1;
+  height: 250px;
+  background-image: url('./images/bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}
+
+.cards__contents {
+  max-width: 400px;
+  margin-inline: auto;
+  position: relative;
+}
+.card {
+  width: 300px;
+  height: 160px;
+  border-radius: 8px;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.card__front {
+  left: 1em;
+  top: 8.4em;
+  
+  background-image: url('./images/bg-card-front.png');
+  z-index: 2;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.logo {
+  width: 3.5em;
+}
+.card__details {
+  text-transform: uppercase;
+  color: var(--White);
+}
+.card__profile {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1em;
+}
+.card__back {
+  background-image: url('./images/bg-card-back.png');
+  top: 2em;
+  right: 1em;
+  z-index: 1;
+
+}
+.cvc {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 2em;
+  color: var(--White);
+  font-size: .9rem;
+}
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+/* ------------------------------------------------------------------ */
+.form__container {
+  grid-column: 1/-1;
+  grid-row: 2;
+  background-color: green;
+}
+.attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+@media (min-width: 1024px) {
+
+}
